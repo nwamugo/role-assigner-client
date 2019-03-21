@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+input {
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  font-weight: 100;
+  outline: none;
+  color: #ad7001;
+}
+
+::placeholder {
+  color: #c5c1ac;
+}
+
+button {
+  outline-color: #c5c1ac;
+}
+button:hover {
+  cursor: pointer;
+}
+
+.input-lg {
+  border-color: transparent;
+  display: flex;
+  flex: 1;
+  padding: 10px 20px;
+  height: 100% !important;
+  border-radius: 0 !important;
+}
+
+.main.title {
+  text-align: center;
+  color: #fffdf3;
+}
+.main.title h1 {
+  font-size: 40px;
+  line-height: 50px;
+  margin-top: 0;
+}
+.homepage .page-background {
+  background-image: url('../img/page-background.png');
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -999;
+}
+.homepage .page-background::before {
+  content: "";
+  background: #033580ba;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  z-index: -888;
+}
+
+.form-area {
+  text-align: center;
+  padding: 0px 40px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+form.main {
+  display: flex;
+  height: 45px;
+  margin-bottom: 20px;
+  transition: all 200ms ease;
+  flex: 1;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+.homepage .submit {
+  height: 100%;
+  border: none;
+  display: flex;
+  width: 50px;
+  text-align: center;
+  background-color: #de9a34;
+  padding: 0px 10px;
+  color: white;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.homepage .submit:hover {
+  background-color: #c78a2e;
+}
+
+.form-area .create-link {
+  color: white;
+}
+
+.form-area .create-link button {
+  color: #de9a34;
+  background: none;
+  border: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+  transition: all 300ms ease;
+  outline: none;
+}
+
+.form-area .create-link button:hover {
+  border-color: white;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 60em) {
+  form.main {
+    height: 55px;
+  }
+  .form-area {
+    padding: 0px 60px;
+    width: 60%;
+  }
+}
