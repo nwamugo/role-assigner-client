@@ -4,9 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Role Assigner</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="vendors/css/normalize.css">
+    <link rel="stylesheet" href="resources/css/font-awesome.min.css">
+    <link rel="stylesheet" href="resources/css/landing-page.css">
+
 </head>
 <body>
+    <div class="page-wrapper homepage">
+        <div class="page-background"></div>
+
+        <div class="main-container">
+            <div class="main title">
+                <h1>Role Assigner</h1>
+            </div>
+            <div class="form-area">
+                <form action="" class="main">
+                    <input class="input-lg" type="text" name="team-key" placeholder="INPUT TEAM KEY">
+                    <button class="submit">⟶</button>
+                </form>
+                <div>
+                    <p class="create-link">
+                        <span>Don't have a team?</span>
+                        <button data-toggle="modal" data-target="#createTeamModal">Create Team</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="createTeamModal" tabindex="-1" role="dialog" aria-labelledby="createTeamModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Create your team</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form id="">
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Team name:</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <blockquote class="blockquote">
+                        <form id="add-team-member">
+                            <h4>Add Team Members:</h4>
+                            <div class="chips" id="membersList">
+                                <a href="#" class="badge badge-secondary">
+                                    <span name="member-name">Member</span>
+                                    <i class="fa fa-close"></i>
+                                </a>
+                            </div>
+                            <input type="text" name="new-member" class="form-control" placeholder="member name" style="margin: 7px 0px;">                        
+                            <button class="btn btn-primary">Add</button>
+                        </form>
+                    </blockquote>
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Create</button>
+            </div>
+          </div>
+        </div>
+    </div>
     
 </body>
 </html>
