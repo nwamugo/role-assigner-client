@@ -1,0 +1,58 @@
+@media (max-width: 75em) {
+    html { font-size: 56.25%; }
+
+    .container {
+        max-width: 100rem;
+    }
+}
+
+@media (max-width: 56.25em) {
+    html { font-size: 50%; }
+
+    .team {
+        margin-right: 6rem;
+    }
+}
+
+@media (max-width: 36.9em) {
+    .officials {
+        position: absolute;
+        left: 4rem;
+    }
+
+    .team {
+        position: absolute;
+        top: 42rem;
+        left: 4rem;
+    }
+
+    .team__name {
+        margin-top: 1rem;
+        margin-bottom: -2rem;
+    }
+
+    .theme__set {
+        height: 110vh;
+    }
+}
+
+
+@media (max-width: 22.5em) {
+    .theme__set {
+        height: 120vh;
+    }
+
+    .team {
+        margin-left: -2rem;
+        width: 35rem;
+    }
+
+    .team__name {
+        margin-bottom: 0.06rem;
+    }
+
+    .team__value {
+        font-size: 3rem;
+        height: 5rem;
+    }
+}
