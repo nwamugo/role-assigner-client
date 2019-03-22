@@ -1,51 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="resources/css/team-view.css">
-    <link rel="stylesheet" type="text/css" href="resources/css/team-view-queries.css">
-    
-    <title>Role Assigner | team roles</title>
+	<link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="resources/css/team-view.css">
+	<link rel="stylesheet" type="text/css" href="resources/css/team-view-queries.css">
+	
+	<title>Role Assigner | team roles</title>
 </head>
 <body>
     
-    <div class='container'>
-        <div class="theme__set"></div>
-        <div class="officials">
-            <div class="tl__details">
-                <h2 class="team__lead">Team Lead</h2>
-                <div class="tl__name">Emmanuel Daniel</div>
-            </div>
-            <div class="qa__details">
-                <h2 class="qas">QA<span class="plural">s</span></h2>
-                <div class="qa__names">
-                    <ul>
-                        <li class="qa__select">Favour Afolayan</li>
-                        <li class="qa__select">Ugoji Duziem</li>
-                    </ul>
-                </div>
-            </div>           
-        </div>
-        <div class="team">
-            <h2 class="team__name">Team</h2>
-            <div class="team__value">ZINNIA</div>
-
-            <div class="members__list">
-                <ol>
-                    <li class="members">Emmanuel Osuh</li>
-                    <li class="members">Ebenezer Ennim</li>
-                    <li class="members">Favour Afolayan</li>
-                    <li class="members">Ugoji Duziem</li>
-                    <li class="members">Edidiong Udombat</li>
-                    <li class="members">Dimkpa Opara</li>
-                    <li class="members">Emmanuel Daniel</li>
-                </ol>
-            </div>
-        </div>
-    </div>
+	<div class='container'>
+		<div class="theme__set"></div>
+		<div class="officials">
+			<div class="tl__details">
+				<h2 class="team__lead">Team Lead</h2>
+				<div id="team__lead--container"></div>
+			</div>
+			<div class="qa__details">
+				<h2 class="qas">QA<span class="plural">s</span></h2>
+				<div class="qa__names">
+					<ul id="qa--container">
+						<!-- <li class="qa__select">Favour Afolayan</li>
+						<li class="qa__select">Ugoji Duziem</li> -->
+					</ul>
+				</div>
+			</div>           
+			</div>
+			<div class="team">
+				<h2 class="team__name">Team</h2>
+				<div class="team__value">ZINNIA</div>
+				<div class="members__list">
+					<ol>
+						<li class="members">Emmanuel Osuh</li>
+						<li class="members">Ebenezer Ennim</li>
+						<li class="members">Favour Afolayan</li>
+						<li class="members">Ugoji Duziem</li>
+						<li class="members">Edidiong Udombat</li>
+						<li class="members">Dimkpa Opara</li>
+						<li class="members">Emmanuel Daniel</li>
+					</ol>
+			  </div>
+		  </div>
+	</div>
+	
+	<script src="./js/consume-api.js"></script>
 </body>
 </html>
