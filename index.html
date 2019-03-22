@@ -51,32 +51,28 @@
               </button>
             </div>
             <div class="modal-body">
-                <form id="">
+                <!-- <form id="create-team"> -->
                     <div class="form-group">
                         <label for="recipient-name" class="col-form-label">Team name:</label>
-                        <input type="text" class="form-control" id="recipient-name">
+                        <input type="text" class="form-control" id="team-name">
                     </div>
-                    <blockquote class="blockquote">
-                        <form id="add-team-member">
-                            <h4>Add Team Members:</h4>
-                            <div class="chips" id="membersList">
-                                <a href="#" class="badge badge-secondary">
-                                    <span name="member-name">Member</span>
-                                    <i class="fa fa-close"></i>
-                                </a>
-                            </div>
-                            <input type="text" name="new-member" class="form-control" placeholder="member name" style="margin: 7px 0px;">                        
-                            <button class="btn btn-primary">Add</button>
-                        </form>
-                    </blockquote>
-                </form>
+                <!-- </form> -->
+                <blockquote class="blockquote">
+                    <form action="" id="add-team-members">
+                        <h4>Add Team Members:</h4>
+                        <div class="chips" name="members" id="membersList"></div>
+                        <input type="text" name="new-member" class="form-control" placeholder="member's full name" style="margin: 7px 0px;">                        
+                        <button class="btn btn-primary">Add</button>
+                    </form>
+                </blockquote>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary">Create</button>
+              <button type="button" id="create-team" class="btn btn-primary">Create</button>
             </div>
           </div>
         </div>
     </div>
     
+    <script src="js/home.js"></script>
 </body>
 </html>

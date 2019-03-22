@@ -45,12 +45,22 @@ body {
     border-radius: 1.5px 0 0 1.5px;
 }
 
-.tl__name {
+.tl__name,
+.team__value {
     height: 10rem;
-    margin-top: -1.7rem;
-    border-left: 2px solid #033580;
     padding-top: 3.8rem;
     padding-left: 2rem;
+}
+
+.tl__name {
+    border-left: 2px solid #033580;
+}
+
+.team__value {
+    font-weight: 700;
+    font-size: 6rem;
+    padding: 0;
+    border-bottom: 2px solid #033580;
 }
 
 .qa__names {
@@ -64,18 +74,12 @@ body {
     margin-bottom: 2rem;
 }
 
-.team__value {
-    height: 4rem;
-    background-color: #fafafa;
-    border-radius: 1.5px;
-    width: 15rem;
-}
-
 .qa__details {
     margin-top: 8rem;
 }
 
-.team__lead {
+.team__lead,
+.team__name {
     width: 10rem;
     height: 5rem;
     padding-top: 1rem;
@@ -112,7 +116,8 @@ h2 {
     font-family: inherit;
     font-size: 2rem;
     color: inherit;
-    box-shadow: 0 0 0 .08rem rgba(3,53,128, .6);
-
-    margin-top: 2rem;
+    
+    text-align: right;
+    padding-top: 2rem;
 }
+
